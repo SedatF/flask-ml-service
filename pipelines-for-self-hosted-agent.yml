@@ -10,7 +10,7 @@ pool: myAgentPool2
 
 variables:
   # TODO: Replace the service connection name as used in the DevOps project settings
-  azureServiceConnectionId: 'mySC'
+  azureServiceConnectionId: '99c360d5-5a1d-45b7-93ae-80a16feaccb7'
   
   # TODO: Specify the value of the existing Web App name
   webAppName: 'mywebapp229259'
@@ -26,7 +26,7 @@ stages:
   displayName: Build stage
   jobs:
   - job: BuildJob
-    pool: myAgentPool
+    pool: myAgentPool2
     steps:    
     - script: |
         python3.7 -m pip install --upgrade pip
